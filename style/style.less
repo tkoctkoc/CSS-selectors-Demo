@@ -1,0 +1,210 @@
+@my333 : #333;
+@my666 : #666;
+@my777 : #777;
+@my999 : #999;
+@myff6 : #B9FF76;
+@myfc3 : #FC3;
+@myf60 : #F60;
+@myd33 : #D33;
+@myblue : #417BBB;
+@mybluer : #1EBEFF;
+@mygreen : #6ECF00;
+@mywhite : #E0E0E0;
+@myeee : #EEE;
+
+html, body, h1, h2, h3, p, fieldset, legend, ul, ol, li, dl, dt, dd { margin : 0; padding : 0; }
+
+ul, ol, dl { list-style : none; }
+
+body { padding : 20px 0; color : @my333; font-size : 12px; line-height : 1.7; background : @my777; }
+
+.clearfix { zoom : 1; }
+
+.clearfix:after { visibility : hidden; display : block; font-size : 0; content : " "; clear : both; height : 0; }
+
+.wrap { position : relative; width : 968px; margin : 0 auto; padding : 20px 25px; border-radius : 5px; background : @mywhite; }
+
+.doctip { position : absolute; top : 20px; right : 50px; color : @my999; }
+
+h1 { margin-bottom : 10px; font : bold 36px/60px Arial, "\5FAE\8F6F\96C5\9ED1"; }
+
+h1 .site { display : inline-block; margin-left : 20px; font-size : 18px; color : @myblue; text-decoration : none; }
+
+;
+
+p {
+  text-indent : 2em;
+}
+
+.im { color : #F00 }
+
+/* 选择器列表 */
+#selectors {
+  float         : left;
+  width         : 280px;
+  padding       : 10px 20px;
+  border-radius : 5px;
+  background    : black;
+  color         : @myeee;
+  box-shadow    : 3px 3px 5px @my999;
+  font-family   : "Microsoft YaHei", sans-serif, serif, Monaco;
+}
+
+#selectors dl { margin-bottom : 10px; }
+
+#selectors dt { color : @mybluer; font : bold 14px/30px Arial, "\5FAE\8F6F\96C5\9ED1"; }
+
+#selectors dd { padding-left : 14px; border-radius : 3px 3px 0 3px; line-height : 24px; cursor : pointer; margin: 4px 0;}
+
+#selectors dd:hover { background : @my666; }
+
+#selectors dd a { display : block; color : @myeee; text-decoration : none; }
+
+#selectors dd .intro { display : none; position : absolute; top : 20px; left : 120px; width : 140px; padding : 5px 10px 10px 10px; border-radius : 0 0 3px 3px; background : @myff6; color : @my333; line-height : 18px; }
+
+#selectors dd .tip { color : @my777; }
+
+#selectors dd.n { position : relative; background : @myff6; color : @myd33; cursor : auto; }
+
+#selectors dd.n a { color : @myd33; }
+
+#selectors dd.n .intro { display : block; }
+
+/* 示例 */
+#example { float : right; width : 590px; background-color : white; padding : 10px 20px; border : 5px dashed @mywhite; }
+
+#example h1,
+#example h2,
+#example h3 { margin : 5px 0; font : bold 36px/50px Arial, "\5FAE\8F6F\96C5\9ED1"; }
+
+#example h2 { font-size : 24px; line-height : 30px; }
+
+#example h3 { font-size : 14px; line-height : 24px; }
+
+#example ul,
+#example ol,
+#example dl,
+#example div,
+#example .talk { margin : 5px 0; padding-top : 20px; }
+
+#example p,
+#example li,
+#example dt,
+#example dd { margin : 2px 0; }
+
+#example h1,
+#example h2,
+#example h3,
+#example ol,
+#example li,
+#example dl,
+#example dt,
+#example dd,
+#example p,
+#example div { position : relative; padding-left : 40px; }
+
+#example h1:before,
+#example h2:before,
+#example h3:before,
+#example ol:before,
+#example li:before,
+#example dl:before,
+#example dt:before,
+#example dd:before,
+#example p:before,
+#example div:before,
+#example .talk:after { position : absolute; top : 0; left : 5px; color : @my999; font-weight : normal; font-size : 12px; font-family : Consolas, Monaco, Courier, "Courier New"; }
+
+#example h1:before { content : "<h1>"; }
+
+#example h2:before { content : "<h2>"; }
+
+#example h3:before { content : "<h3>"; }
+
+#example ol:before { content : "<ol>"; }
+
+#example li:before { content : "<li>"; }
+
+#example dt:before { content : "<dt>"; }
+
+#example dd:before { content : "<dd>"; }
+
+#example p:before { content : "<p>"; }
+
+#example div:before { content : "<div>"; }
+
+div#line:before { content : "<div id=\"line\">"; }
+
+#example #catalogue:before { content : "<div id=\"catalogue\">"; }
+
+#example ol.list:before { content : "<ol class=\"list\">"; }
+
+#example dl.list:before { content : "<dl class=\"list\">"; }
+
+#example ol.list:lang(zh):before { content : "<ol class=\"list\" lang=\"zh\">"; }
+
+#example ol.only:before { content : "<ol class=\"only\">"; }
+
+#example .season_2:before { content : "<div class=\"season_2\">"; }
+
+#example .article:before { content : "<div class=\"article\">"; }
+
+#example .talk { padding-bottom : 20px; }
+
+#example .talk:after { top : auto; bottom : 0; }
+
+#example .talk:before { content : "<p class=\"talk\">"; }
+
+#example .talk:after { content : "</p>" }
+
+#example a { padding : 5px; color : @myd33; text-decoration : none; }
+
+#example a:hover { color : @mygreen; text-decoration : underline; }
+
+#example h3:empty { height : 24px; }
+
+.talk:first-letter { font-size : 18px; font-weight : bold; }
+
+.talk:first-line { background : @myeee; font-family : Consolas, Monaco, Courier, "Courier New"; }
+
+.talk:before,
+.talk:after { padding : 0 0.5em; color : @myf60; border-radius : 2px; background : @my999; }
+
+.talk::selection { color : @mywhite; background : @myf60; }
+
+/* 高亮选中结果 */
+.ex_all *,
+.ex_element li,
+.ex_id #catalogue,
+.ex_class .list,
+.ex_find #catalogue h3,
+.ex_children #catalogue > h3,
+.ex_next h1 + h2,
+.ex_next_all h1 ~ h2,
+.ex_first_child h3:first-child { color : @myfc3; border-radius : 6px; background : @my666; }
+
+.ex_last_child h3:last-child,
+.ex_only_child .list dt:only-child,
+.ex_nth_child h3:nth-child(2n),
+.ex_nth_last_child h3:nth-last-child(2n),
+.ex_first_of_type h3:first-of-type,
+.ex_last_of_type h3:last-of-type,
+.ex_only_of_type .list dt:only-of-type,
+.ex_nth_of_type h3:nth-of-type(2n),
+.ex_nth_last_of_type h3:nth-last-of-type(2n) { color : @myfc3; border-radius : 6px; background : @my666; }
+
+.ex_lang .list:lang(zh) { color : @myfc3; border-radius : 6px; background : @my666; }
+
+.ex_not ol:not(.list),
+.ex_empty h3:empty,
+.ex_target #line:target { color : @myfc3; border-radius : 6px; background : @my666; }
+
+.ex_attr a[class],
+.ex_attr_equal a[target="_blank"],
+.ex_attr_start a[href^="https"],
+.ex_attr_end a[href$=".jpg"],
+.ex_attr_like a[href*="baike"],
+.ex_attr_con a[class|="abc"],
+.ex_attr_space a[class~="abc"] { color : @myfc3; border-radius : 6px; background : @my666; }
+
+
