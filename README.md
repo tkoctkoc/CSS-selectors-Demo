@@ -7,3 +7,4 @@ CSS-selectors-demo
 * 点击左侧列表中的选择器，即可在右侧中预览到选择器匹配到的内容。
 
 ## [DEMO](https://www.lidongtech.com/tools/CSS-selectors/index.html)
+<img src="/img/demo.jpg" />
